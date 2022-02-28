@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  em {
+    @apply text-red-600;
+  }
+
+  button,
+  button[type="submit"] {
+    @apply mt-1 py-1 px-4
+        block 
+        rounded-md 
+        border
+        font-bold
+        text-white
+        bg-green-600;
+  }
+
+  input[type="text"],
+  textarea {
+    @apply mt-1 p-2
+        block 
+        w-full 
+        rounded-md 
+        border 
+        shadow-sm;
+  }
+  textarea {
+    @apply font-mono;
+  }
+}

@@ -88,7 +88,7 @@ export default function EditPost() {
         <br />
         <textarea
           id="markdown"
-          rows={20}
+          rows={10}
           name="markdown"
           value={post.markdown}
           onChange={(e) =>
@@ -98,7 +98,7 @@ export default function EditPost() {
       </p>
       <p>
         <button type="submit">
-          {transition.submission ? "Editing..." : "Edit Post"}
+          {transition.submission ? "Saving..." : "Save Post"}
         </button>
       </p>
     </Form>

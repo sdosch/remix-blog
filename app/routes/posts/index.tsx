@@ -8,7 +8,7 @@ export const loader = async () => {
 export default function Posts() {
   const posts = useLoaderData<Post[]>();
   return (
-    <div>
+    <div className="prose prose-slate prose-sm m-6">
       <h1>Posts</h1>
       <ul>
         {posts.map((post) => (
