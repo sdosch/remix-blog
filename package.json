@@ -3,6 +3,7 @@
   "private": true,
   "description": "",
   "license": "",
+  "homepage": "https://sdosch.github.io/remix-blog/",
   "sideEffects": false,
   "scripts": {
     "build": "cross-env NODE_ENV=production npm run build:css && remix build",
