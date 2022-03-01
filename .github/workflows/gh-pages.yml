@@ -54,5 +54,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ./public
           external_repository: remix-blog/sdosch.github.io
