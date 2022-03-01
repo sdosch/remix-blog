@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>New Remix App</title><link rel="stylesheet" href="/build/_assets/tailwind-YMNK32KB.css"/></head><body><div><nav class="bg-sky-600"><ul class="flex px-3"><li><a class="block p-3 font-bold text-white no-underline" href="/"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="house" class="svg-inline--fa fa-house " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"></path></svg></a></li><li><a class="block p-3 font-bold text-white no-underline" href="/posts">Blog</a></li><li><a class="block p-3 font-bold text-white no-underline" href="/admin">Admin</a></li></ul></nav><div class="m-10"><h1>🦄 Admin</h1><div class="grid grid-cols-4"><nav class="pr-10"><ul class="pl-0 mb-5"><li class="pl-0 flex gap-5 justify-between"><a href="/admin/0-my-first-post/edit">My First Post</a><a href="/admin/0-my-first-post/delete">Delete</a></li><li class="pl-0 flex gap-5 justify-between"><a href="/admin/90s-mixtape/edit">90s Mixtape</a><a href="/admin/90s-mixtape/delete">Delete</a></li><li class="pl-0 flex gap-5 justify-between"><a href="/admin/markdown/edit">Markdown Demo</a><a href="/admin/markdown/delete">Delete</a></li></ul><button class="text-white bg-green-600">Create Post</button></nav><main class="col-span-3 pl-10 border-l-4"><form method="post" action="/admin/90s-mixtape/edit" encType="application/x-www-form-urlencoded"><p><label>Post Title: <input type="text" name="title" value="90s Mixtape"/></label></p><p><label>Post Slug: <input type="text" name="slug" value="90s-mixtape" disabled=""/></label></p><p><label for="markdown">Markdown:</label><br/><textarea id="markdown" rows="10" name="markdown"># 90s Mixtape
+
+- I wish (Skee-Lo)
+- This Is How We Do It (Montell Jordan)
+- Everlong (Foo Fighters)
+- Ms. Jackson (Outkast)
+- Interstate Love Song (Stone Temple Pilots)
+- Killing Me Softly With His Song (Fugees, Ms. Lauryn Hill)
+- Just a Friend (Biz Markie)
+- The Man Who Sold The World (Nirvana)
+- Semi-Charmed Life (Third Eye Blind)
+- ...Baby One More Time (Britney Spears)
+- Better Man (Pearl Jam)
+- It&#x27;s All Coming Back to Me Now (Céline Dion)
+- This Kiss (Faith Hill)
+- Fly Away (Lenny Kravits)
+- Scar Tissue (Red Hot Chili Peppers)
+- Santa Monica (Everclear)
+- C&#x27;mon N&#x27; Ride it (Quad City DJ&#x27;s)
+</textarea></p><p><button type="submit" class="text-white bg-green-600">Save</button></p></form></main></div></div></div><script>(STORAGE_KEY => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({
+        key
+      }, "");
+    }
+
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "{}");
+      let storedY = positions[window.history.state.key];
+
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(STORAGE_KEY);
+    }
+  })("positions")</script><link rel="modulepreload" href="/build/_shared/chunk-5NKBV7YK.js"/><link rel="modulepreload" href="/build/_shared/chunk-TOAMQMCD.js"/><link rel="modulepreload" href="/build/root-3LMAYTMS.js"/><link rel="modulepreload" href="/build/_shared/chunk-YLQCU6ES.js"/><link rel="modulepreload" href="/build/routes/admin-CEBWUTBN.js"/><link rel="modulepreload" href="/build/routes/admin/$slug.edit-ZLH332XN.js"/><script>window.__remixContext = {'actionData':undefined,'appState':{'trackBoundaries':true,'trackCatchBoundaries':true,'catchBoundaryRouteId':null,'renderBoundaryRouteId':null,'loaderBoundaryRouteId':null,'error':undefined,'catch':undefined},'matches':[{'params':{'slug':'90s-mixtape'},'pathname':'/','route':{'id':'root','parentId':undefined,'path':'','index':undefined,'caseSensitive':undefined,'module':'/build/root-3LMAYTMS.js','imports':undefined,'hasAction':false,'hasLoader':false,'hasCatchBoundary':false,'hasErrorBoundary':false}},{'params':{'slug':'90s-mixtape'},'pathname':'/admin','route':{'id':'routes/admin','parentId':'root','path':'admin','index':undefined,'caseSensitive':undefined,'module':'/build/routes/admin-CEBWUTBN.js','imports':['/build/_shared/chunk-YLQCU6ES.js'],'hasAction':false,'hasLoader':true,'hasCatchBoundary':false,'hasErrorBoundary':false}},{'params':{'slug':'90s-mixtape'},'pathname':'/admin/90s-mixtape/edit','route':{'id':'routes/admin/$slug.edit','parentId':'routes/admin','path':':slug/edit','index':undefined,'caseSensitive':undefined,'module':'/build/routes/admin/$slug.edit-ZLH332XN.js','imports':undefined,'hasAction':true,'hasLoader':true,'hasCatchBoundary':false,'hasErrorBoundary':false}}],'routeData':{'routes/admin':[{'slug':'0-my-first-post','title':'My First Post'},{'slug':'90s-mixtape','title':'90s Mixtape'},{'slug':'markdown','title':'Markdown Demo'}],'routes/admin/$slug.edit':{'slug':'90s-mixtape','html':'<h1 id="90s-mixtape">90s Mixtape</h1>\n<ul>\n<li>I wish (Skee-Lo)</li>\n<li>This Is How We Do It (Montell Jordan)</li>\n<li>Everlong (Foo Fighters)</li>\n<li>Ms. Jackson (Outkast)</li>\n<li>Interstate Love Song (Stone Temple Pilots)</li>\n<li>Killing Me Softly With His Song (Fugees, Ms. Lauryn Hill)</li>\n<li>Just a Friend (Biz Markie)</li>\n<li>The Man Who Sold The World (Nirvana)</li>\n<li>Semi-Charmed Life (Third Eye Blind)</li>\n<li>...Baby One More Time (Britney Spears)</li>\n<li>Better Man (Pearl Jam)</li>\n<li>It&#39;s All Coming Back to Me Now (C\xE9line Dion)</li>\n<li>This Kiss (Faith Hill)</li>\n<li>Fly Away (Lenny Kravits)</li>\n<li>Scar Tissue (Red Hot Chili Peppers)</li>\n<li>Santa Monica (Everclear)</li>\n<li>C&#39;mon N&#39; Ride it (Quad City DJ&#39;s)</li>\n</ul>\n','markdown':'# 90s Mixtape\n\n- I wish (Skee-Lo)\n- This Is How We Do It (Montell Jordan)\n- Everlong (Foo Fighters)\n- Ms. Jackson (Outkast)\n- Interstate Love Song (Stone Temple Pilots)\n- Killing Me Softly With His Song (Fugees, Ms. Lauryn Hill)\n- Just a Friend (Biz Markie)\n- The Man Who Sold The World (Nirvana)\n- Semi-Charmed Life (Third Eye Blind)\n- ...Baby One More Time (Britney Spears)\n- Better Man (Pearl Jam)\n- It\'s All Coming Back to Me Now (C\xE9line Dion)\n- This Kiss (Faith Hill)\n- Fly Away (Lenny Kravits)\n- Scar Tissue (Red Hot Chili Peppers)\n- Santa Monica (Everclear)\n- C\'mon N\' Ride it (Quad City DJ\'s)\n','title':'90s Mixtape'}}};</script><script src="/build/manifest-975BE211.js"></script><script type="module">import * as route0 from "/build/root-3LMAYTMS.js";
+import * as route1 from "/build/routes/admin-CEBWUTBN.js";
+import * as route2 from "/build/routes/admin/$slug.edit-ZLH332XN.js";
+window.__remixRouteModules = {"root":route0,"routes/admin":route1,"routes/admin/$slug.edit":route2};</script><script src="/build/entry.client-WSPEO4PO.js" type="module"></script></body></html>
