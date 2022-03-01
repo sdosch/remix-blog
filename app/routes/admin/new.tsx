@@ -1,6 +1,6 @@
 import { Form, redirect, useActionData, useTransition } from "remix";
 import type { ActionFunction } from "remix";
-import { createPost } from "~/post";
+import { writePost } from "~/post";
 import invariant from "tiny-invariant";
 
 type PostError = {
@@ -28,7 +28,7 @@ export const action: ActionFunction = async ({ request }) => {
   invariant(typeof title === "string");
   invariant(typeof slug === "string");
   invariant(typeof markdown === "string");
-  await createPost({ title, slug, markdown });
+  await writePost({ title, slug, markdown });
 
   return redirect("/admin");
 };

@@ -8,11 +8,11 @@ import {
 import { useLoaderData } from "remix";
 import invariant from "tiny-invariant";
 
-import { deletePost, getPost } from "~/post";
+import { deletePost, readPost } from "~/post";
 
 export const loader: LoaderFunction = async ({ params }) => {
   invariant(params.slug, "expected params.slug");
-  return getPost(params.slug);
+  return readPost(params.slug);
 };
 
 export const action: ActionFunction = async ({ request }) => {

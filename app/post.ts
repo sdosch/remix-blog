@@ -47,7 +47,7 @@ export async function getPosts() {
   );
 }
 
-export async function getPost(slug: string) {
+export async function readPost(slug: string) {
   const filepath = path.join(postsPath, slug + ".md");
   const file = await fs.readFile(filepath);
   const { attributes, body } = parseFrontMatter(file.toString());
@@ -59,10 +59,10 @@ export async function getPost(slug: string) {
   return { slug, html, markdown: body, title: attributes.title };
 }
 
-export async function createPost(post: NewPost) {
+export async function writePost(post: NewPost) {
   const md = `---\ntitle: ${post.title}\n---\n\n${post.markdown}`;
   await fs.writeFile(path.join(postsPath, post.slug + ".md"), md);
-  return getPost(post.slug);
+  return readPost(post.slug);
 }
 
 export async function deletePost(slug: string) {

@@ -9,7 +9,7 @@ import {
 } from "remix";
 import { useLoaderData } from "remix";
 import invariant from "tiny-invariant";
-import { createPost, getPost, NewPost } from "~/post";
+import { writePost, readPost, NewPost } from "~/post";
 
 type PostError = {
   title?: boolean;
@@ -19,7 +19,7 @@ type PostError = {
 
 export const loader: LoaderFunction = async ({ params }) => {
   invariant(params.slug, "expected params.slug");
-  return getPost(params.slug);
+  return readPost(params.slug);
 };
 
 export const action: ActionFunction = async ({ request }) => {
@@ -43,7 +43,7 @@ export const action: ActionFunction = async ({ request }) => {
   invariant(typeof slug === "string");
   invariant(typeof markdown === "string");
 
-  await createPost({ title, slug, markdown });
+  await writePost({ title, slug, markdown });
 
   return redirect("/admin");
 };
