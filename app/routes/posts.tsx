@@ -14,7 +14,7 @@ export default function Posts() {
     <div>
       <Navigation />
       <div className="m-10">
-        <h1>Posts</h1>
+        <h1>🐴 Blog</h1>
         <div className="grid grid-cols-4">
           <nav className="pr-10">
             <ul className="pl-0 mb-5 ">

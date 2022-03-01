@@ -15,7 +15,7 @@ export default function Admin() {
     <div>
       <Navigation />
       <div className="m-10">
-        <h1>Admin</h1>
+        <h1>🦄 Admin</h1>
         <div className="grid grid-cols-4">
           <nav className="pr-10">
             <ul className="pl-0 mb-5">

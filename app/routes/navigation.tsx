@@ -17,7 +17,7 @@ export const Navigation = () => {
             to="/posts"
             className="block p-3 font-bold text-white no-underline"
           >
-            Posts
+            Blog
           </Link>
         </li>
         <li>
