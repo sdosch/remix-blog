@@ -48,7 +48,7 @@ jobs:
         run: |
           npm run start &
           sleep 10 &&
-          wget --mirror http://localhost:3000 -P public --no-host-directories --page-requisites --adjust-extension -k https://sdosch.githubpages.io/remix-blog
+          wget --mirror http://localhost:3000 -P public --no-host-directories --page-requisites --adjust-extension -k https://sdosch.githubpages.io/remix-blog/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
