@@ -51,14 +51,14 @@ export default function NewPost() {
         </label>
       </p>
       <p>
-        <label htmlFor="markdown">Markdown:</label>
+        <label htmlFor="markdown">Markdown: </label>
         {errors?.markdown ? <em>Markdown is required</em> : null}
         <br />
         <textarea id="markdown" rows={10} name="markdown" />
       </p>
       <p>
-        <button type="submit">
-          {transition.submission ? "Creating..." : "Create Post"}
+        <button type="submit" className="text-white bg-green-600">
+          {transition.submission ? "Saving..." : "Save"}
         </button>
       </p>
     </Form>

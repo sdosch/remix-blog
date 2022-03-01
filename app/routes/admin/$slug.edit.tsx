@@ -60,6 +60,7 @@ export default function EditPost() {
 
   return (
     <Form method="post">
+      <input type="hidden" name="slug" value={post.slug} />
       <p>
         <label>
           Post Title: {errors?.title ? <em>Title is required</em> : null}
@@ -68,17 +69,6 @@ export default function EditPost() {
             name="title"
             value={post.title}
             onChange={(e) => setPost({ ...post, title: e.currentTarget.value })}
-          />
-        </label>
-      </p>
-      <p>
-        <label>
-          Post Slug: {errors?.slug ? <em>Slug is required</em> : null}
-          <input
-            type="text"
-            name="slug"
-            value={post.slug}
-            onChange={(e) => setPost({ ...post, slug: e.currentTarget.value })}
           />
         </label>
       </p>
@@ -97,8 +87,8 @@ export default function EditPost() {
         />
       </p>
       <p>
-        <button type="submit">
-          {transition.submission ? "Saving..." : "Save Post"}
+        <button type="submit" className="text-white bg-green-600">
+          {transition.submission ? "Saving..." : "Save"}
         </button>
       </p>
     </Form>

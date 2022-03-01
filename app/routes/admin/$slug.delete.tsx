@@ -33,10 +33,10 @@ export default function DeletePost() {
 
   return (
     <Form method="post">
-      <p>Delete {loaderData.slug}?</p>
+      <h2>Delete {loaderData.slug}?</h2>
       <p>
         <input type="hidden" name="slug" value={loaderData.slug} />
-        <button type="submit">
+        <button type="submit" className="bg-red-600 text-white">
           {transition.submission ? "Deleting..." : "Delete"}
         </button>
       </p>

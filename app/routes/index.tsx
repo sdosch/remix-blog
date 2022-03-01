@@ -1,16 +1,12 @@
-import { Link } from "remix";
+import { Navigation } from "./navigation";
 
 export default function Index() {
   return (
-    <nav className="prose prose-slate prose-sm m-6">
-      <ul>
-        <li>
-          <Link to="/posts">Posts</Link>
-        </li>
-        <li>
-          <Link to="/admin">Admin</Link>
-        </li>
-      </ul>
-    </nav>
+    <div>
+      <Navigation />
+      <div className="m-10">
+        <h1>Remix Demo</h1>
+      </div>
+    </div>
   );
 }
