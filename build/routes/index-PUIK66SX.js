@@ -1,0 +1,1 @@
+import{a as d}from"/build/_shared/chunk-YLQCU6ES.js";import"/build/_shared/chunk-5NKBV7YK.js";import{f as i,g as o}from"/build/_shared/chunk-TOAMQMCD.js";o();o();function m(){return i.createElement("div",null,i.createElement(d,null),i.createElement("div",{className:"m-10"},i.createElement("h1",null,"Remix Demo")))}export{m as default};

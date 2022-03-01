@@ -1,0 +1,1 @@
+import{h as t}from"/build/_shared/chunk-5NKBV7YK.js";import{f as o,g as r}from"/build/_shared/chunk-TOAMQMCD.js";r();r();function e(){let s=t();return o.createElement("article",{className:"prose prose-slate prose-xl m-6",dangerouslySetInnerHTML:{__html:s.html}})}export{e as default};

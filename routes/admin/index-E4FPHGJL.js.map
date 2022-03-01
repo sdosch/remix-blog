@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:/Users/sdosch/src/remix/blog/app/routes/admin/index.tsx?browser", "../../../../app/routes/admin/index.tsx"],
-  "sourcesContent": ["export { default } from \"/Users/sdosch/src/remix/blog/app/routes/admin/index.tsx\";", "import { Link } from \"remix\";\n\nexport default function AdminIndex() {\n  return (\n    <div>\n      <p>Select Post...</p>\n      <p>\n        ...or create a <Link to=\"new\">New Post</Link>\n      </p>\n    </div>\n  );\n}\n"],
-  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAEe,sBAAsB;AACnC,SACE,oCAAC,OAAD,MACE,oCAAC,KAAD,MAAG,mBACH,oCAAC,KAAD,MAAG,mBACc,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAM;AAAA;",
-  "names": []
-}
