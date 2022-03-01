@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/sdosch/src/remix/blog/app/routes/posts/index.tsx?browser", "../../../../app/routes/posts/index.tsx"],
+  "sourcesContent": ["export { default } from \"/Users/sdosch/src/remix/blog/app/routes/posts/index.tsx\";", "export default function PostsIndex() {\n  return <p>Select Post...</p>;\n}\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAAe,sBAAsB;AACnC,SAAO,oCAAC,KAAD,MAAG;AAAA;",
+  "names": []
+}

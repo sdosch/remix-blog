@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/sdosch/src/remix/blog/app/routes/posts/index.tsx?browser", "../../../../app/routes/posts/index.tsx"],
+  "sourcesContent": ["export { default } from \"/Users/sdosch/src/remix/blog/app/routes/posts/index.tsx\";", "import { Link, useLoaderData } from \"remix\";\nimport { getPosts, Post } from \"~/post\";\nimport \"normalize.css\"; // Note this\n\nexport const loader = async () => {\n  return getPosts();\n};\n\nexport default function Posts() {\n  const posts = useLoaderData<Post[]>();\n  return (\n    <div>\n      <h1>Posts</h1>\n      <ul>\n        {posts.map((post) => (\n          <li key={post.slug}>\n            <Link to={post.slug}>{post.title}</Link>\n          </li>\n        ))}\n      </ul>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;AAAA;;;ACAA;AAQe,iBAAiB;AAC9B,QAAM,QAAQ;AACd,SACE,oCAAC,OAAD,MACE,oCAAC,MAAD,MAAI,UACJ,oCAAC,MAAD,MACG,MAAM,IAAI,CAAC,SACV,oCAAC,MAAD;AAAA,IAAI,KAAK,KAAK;AAAA,KACZ,oCAAC,MAAD;AAAA,IAAM,IAAI,KAAK;AAAA,KAAO,KAAK;AAAA;",
+  "names": []
+}

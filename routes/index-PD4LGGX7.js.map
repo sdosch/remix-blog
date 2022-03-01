@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/sdosch/src/remix/blog/app/routes/index.tsx?browser", "../../../app/routes/index.tsx"],
+  "sourcesContent": ["export { default } from \"/Users/sdosch/src/remix/blog/app/routes/index.tsx\";", "import { Navigation } from \"./navigation\";\n\nexport default function Index() {\n  return (\n    <div>\n      <Navigation />\n      <div className=\"m-10\">\n        <h1>Remix Demo</h1>\n      </div>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;AAAA;;;ACAA;AAEe,iBAAiB;AAC9B,SACE,oCAAC,OAAD,MACE,oCAAC,YAAD,OACA,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA,KACb,oCAAC,MAAD,MAAI;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/navigation.tsx"],
+  "sourcesContent": ["import { Link } from \"remix\";\n\nexport const Navigation = () => {\n  return (\n    <nav className=\"bg-sky-600\">\n      <ul className=\"flex gap-5\">\n        <li>\n          <Link to=\"/posts\" className=\"p-3 font-bold text-white no-underline\">\n            Posts\n          </Link>\n        </li>\n        <li>\n          <Link to=\"/admin\" className=\"p-3 font-bold text-white no-underline\">\n            Admin\n          </Link>\n        </li>\n      </ul>\n    </nav>\n  );\n};\n"],
+  "mappings": ";;;;;;;;;AAAA;AAEO,IAAM,aAAa,MAAM;AAC9B,SACE,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA,KACb,oCAAC,MAAD;AAAA,IAAI,WAAU;AAAA,KACZ,oCAAC,MAAD,MACE,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,IAAS,WAAU;AAAA,KAAwC,WAItE,oCAAC,MAAD,MACE,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,IAAS,WAAU;AAAA,KAAwC;AAAA;",
+  "names": []
+}

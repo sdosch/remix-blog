@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/sdosch/src/remix/blog/app/routes/navigation.tsx?browser"],
+  "sourcesContent": ["export * from \"/Users/sdosch/src/remix/blog/app/routes/navigation.tsx\";"],
+  "mappings": ";;;;;;;;;AAAA;",
+  "names": []
+}

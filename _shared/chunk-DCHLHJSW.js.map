@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/navigation.tsx"],
+  "sourcesContent": ["import { Link } from \"remix\";\n\nexport const Navigation = () => {\n  return (\n    <nav id=\"navigation\">\n      <ul>\n        <li>\n          <Link to=\"/posts\">Posts</Link>\n        </li>\n        <li>\n          <Link to=\"/admin\">Admin</Link>\n        </li>\n      </ul>\n    </nav>\n  );\n};\n"],
+  "mappings": ";;;;;;;;;AAAA;AAEO,IAAM,aAAa,MAAM;AAC9B,SACE,oCAAC,OAAD;AAAA,IAAK,IAAG;AAAA,KACN,oCAAC,MAAD,MACE,oCAAC,MAAD,MACE,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAS,WAEpB,oCAAC,MAAD,MACE,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAS;AAAA;",
+  "names": []
+}

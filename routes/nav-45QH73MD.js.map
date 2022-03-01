@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/sdosch/src/remix/blog/app/routes/nav.tsx?browser", "../../../app/routes/nav.tsx"],
+  "sourcesContent": ["export * from \"/Users/sdosch/src/remix/blog/app/routes/nav.tsx\";", "import { Link } from \"remix\";\n\nexport const Navigation = () => {\n  return (\n    <nav>\n      <ul>\n        <li>\n          <Link to=\"/posts\">Posts</Link>\n        </li>\n        <li>\n          <Link to=\"/admin\">Admin</Link>\n        </li>\n      </ul>\n    </nav>\n  );\n};\n"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAEO,IAAM,aAAa,MAAM;AAC9B,SACE,oCAAC,OAAD,MACE,oCAAC,MAAD,MACE,oCAAC,MAAD,MACE,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAS,WAEpB,oCAAC,MAAD,MACE,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAS;AAAA;",
+  "names": []
+}
