@@ -55,4 +55,4 @@ jobs:
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./public
-          external_repository: remix-blog/sdosch.github.io
+          #external_repository: remix-blog/sdosch.github.io
